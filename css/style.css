@@ -1,0 +1,722 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+#header {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+}
+#header .logo {
+  width: 13%;
+  padding-top: 15px;
+}
+#header .navmenu {
+  width: 87%;
+}
+#header .navmenu ul {
+  list-style: none;
+}
+#header .navmenu ul li a {
+  font-weight: bolder;
+  color: white;
+  display: inline-block;
+  padding: 20px 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+#header .navmenu ul li a:hover {
+  color: crimson;
+}
+#header .navmenu ul li:last-child a {
+  border: 1px solid grey;
+  border-radius: 3rem;
+  color: white;
+}
+#header .navmenu ul li:last-child a:hover {
+  border: 1px solid crimson;
+  background-color: crimson;
+}
+#header .navmenu ul li:nth-child(9) a {
+  rotate: 230deg;
+}
+
+#design {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/backgroung.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#design .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 19, 19, 0.885);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#design .overlay .txtbox {
+  line-height: 5rem;
+  background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #FD4766 79.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 60%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 60px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#design .overlay .boxes {
+  position: absolute;
+  bottom: 10%;
+  margin-top: 4rem;
+}
+#design .overlay .boxes .box {
+  text-align: center;
+  width: 30%;
+  padding: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#design .overlay .boxes .box p {
+  color: grey;
+  font-size: 20px;
+}
+#design .overlay .boxes .box h1 {
+  padding: 15px 0;
+  color: white;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+}
+#about .imgbox {
+  width: 40%;
+  margin-top: 5rem;
+}
+#about .txtbox {
+  padding-left: 30px;
+  margin-top: 6rem;
+  width: 60%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#about .txtbox i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  background-color: #FD4766;
+  padding: 16px;
+}
+#about .txtbox h1 {
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+#about .txtbox p {
+  font-size: 20px;
+}
+#about .txtbox .p1 {
+  margin-bottom: 30px;
+  color: gray;
+}
+#about .txtbox .p2 {
+  margin-bottom: 30px;
+  color: gray;
+}
+#about .txtbox a {
+  font-weight: 600;
+  background: rgb(34, 51, 195);
+  background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #FD4766 79.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 15px;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#about .txtbox a::before {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  width: 30%;
+  height: 1px;
+  background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #FD4766 79.69%);
+  transition: 0.4s;
+  border-radius: 5px;
+}
+#about .txtbox a:hover::before {
+  width: 100%;
+}
+
+#services {
+  width: 100%;
+  background-color: whitesmoke;
+  padding-bottom: 3rem;
+}
+#services .txtbox {
+  padding-top: 5rem;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#services .txtbox h4 {
+  background: rgb(34, 51, 195);
+  background: linear-gradient(90deg, #1c3efe 30.69%, #ff44e6 60.19%, #FD4766 79.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#services .txtbox h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+#services .txtbox p {
+  margin: auto;
+  font-size: 20px;
+  width: 50%;
+  color: rgb(94, 92, 92);
+}
+#services .boxes .box {
+  background-color: white;
+  width: 30%;
+  margin: 30px 20px;
+  padding: 30px;
+  border-radius: 7px;
+}
+#services .boxes .box img {
+  display: flex;
+  justify-content: flex-start;
+  color: crimson;
+}
+#services .boxes .box i {
+  display: flex;
+  justify-content: flex-start;
+  color: crimson;
+  font-size: 40px;
+}
+#services .boxes .box p {
+  width: 100%;
+  text-align: left;
+}
+#services .boxes .box h2 {
+  padding: 20px 0;
+  width: 100%;
+  text-align: left;
+}
+
+#works {
+  width: 100%;
+  background-color: white;
+  padding: 3rem 0;
+}
+#works .txtbox {
+  padding-top: 5rem;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#works .txtbox h4 {
+  background: rgb(34, 51, 195);
+  background: linear-gradient(90deg, #1c3efe 30.69%, #ff44e6 60.19%, #FD4766 79.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#works .txtbox h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+#works .txtbox p {
+  margin: auto;
+  font-size: 20px;
+  width: 50%;
+  color: rgb(94, 92, 92);
+}
+#works .boxes .box {
+  width: 30%;
+  margin: 30px 20px;
+  position: relative;
+  transform: scale(1);
+  transition: 0.3s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+#works .boxes .box img {
+  transform: scale(1);
+  border-radius: 5px;
+  transition: 0.3s;
+  vertical-align: middle;
+  transform: scale(1);
+}
+#works .boxes .box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(253, 45, 77);
+  background: linear-gradient(180deg, rgba(253, 45, 77, 0) 0%, rgb(253, 45, 77) 100%);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1;
+  transform: scale(1);
+}
+#works .boxes .box:hover {
+  transform: scale(1.1);
+}
+#works .boxes .box:hover img {
+  transform: scale(1.1);
+}
+#works .boxes .box:hover::before {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#works .boxes .box .imgtxt {
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  transform: translate(-25%, -80%);
+  z-index: 2;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#works .boxes .box .imgtxt p {
+  color: rgb(212, 212, 212);
+}
+#works .boxes .box .imgtxt h2 {
+  color: white;
+  margin: 15px 0;
+}
+#works .boxes .box .imgtxt a {
+  font-size: 15px;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 2px;
+}
+
+#company {
+  width: 100%;
+  background-color: whitesmoke;
+  padding-bottom: 3rem;
+}
+#company .txtbox {
+  padding: 5rem 0;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#company .txtbox h4 {
+  background: rgb(34, 51, 195);
+  background: linear-gradient(90deg, #1c3efe 30.69%, #ff44e6 60.19%, #FD4766 79.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#company .txtbox h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+#company .txtbox p {
+  margin: auto;
+  font-size: 20px;
+  width: 50%;
+  color: rgb(94, 92, 92);
+}
+#company .boxes .box {
+  background-color: white;
+  width: 22%;
+  margin: 30px 15px;
+  padding: 50px 0;
+  border-radius: 7px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#company .boxes .box i {
+  display: flex;
+  justify-content: center;
+  color: crimson;
+  font-size: 40px;
+}
+#company .boxes .box p {
+  font-size: 20px;
+  color: rgb(101, 101, 101);
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#company .boxes .box h1 {
+  padding: 20px 0;
+  width: 100%;
+  text-align: left;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#author {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+#author .back {
+  width: 50%;
+  position: relative;
+}
+#author .back i {
+  position: absolute;
+  top: 20%;
+  font-size: 10rem;
+  color: rgba(187, 197, 208, 0.366);
+}
+#author .back .txtbox {
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#author .back .txtbox .p1 {
+  font-weight: 500;
+  font-size: 30px;
+  padding-bottom: 3rem;
+}
+#author .back .txtbox .p2 span {
+  color: red;
+}
+#author .imgs {
+  width: 50%;
+  margin-top: 4rem;
+}
+#author .imgs .img {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+#news {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 3rem 0;
+}
+#news .txtbox {
+  padding-top: 5rem;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#news .txtbox h4 {
+  background: rgb(34, 51, 195);
+  background: linear-gradient(90deg, #1c3efe 30.69%, #ff44e6 60.19%, #FD4766 79.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#news .txtbox h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+#news .txtbox p {
+  margin: auto;
+  font-size: 20px;
+  width: 50%;
+  color: rgb(94, 92, 92);
+}
+#news .boxes .box {
+  width: 30%;
+  margin: 30px 20px;
+  position: relative;
+  transform: scale(1);
+  transition: 0.3s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+#news .boxes .box img {
+  transform: scale(1);
+  border-radius: 5px;
+  transition: 0.3s;
+  vertical-align: middle;
+  transform: scale(1);
+}
+#news .boxes .box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(253, 45, 77);
+  background: linear-gradient(180deg, rgba(253, 45, 77, 0) 0%, rgb(253, 45, 77) 100%);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1;
+  transform: scale(1);
+}
+#news .boxes .box:hover {
+  transform: scale(1.1);
+}
+#news .boxes .box:hover .imgtxt {
+  top: 80%;
+}
+#news .boxes .box:hover img {
+  transform: scale(1.1);
+}
+#news .boxes .box:hover::before {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#news .boxes .box .imgtxt {
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  transform: translate(-25%, -80%);
+  z-index: 2;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.7s;
+}
+#news .boxes .box .imgtxt p {
+  color: rgb(212, 212, 212);
+}
+#news .boxes .box .imgtxt h3 {
+  color: white;
+  margin: 30px 0;
+}
+#news .boxes .box .imgtxt a {
+  font-size: 15px;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 2px;
+}
+
+#brands {
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  padding-bottom: 3rem;
+}
+#brands .txtbox {
+  padding: 5rem 0;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#brands .txtbox h4 {
+  background: rgb(34, 51, 195);
+  background: linear-gradient(90deg, #1c3efe 30.69%, #ff44e6 60.19%, #FD4766 79.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#brands .txtbox h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+#brands .boxes {
+  height: 30%;
+}
+#brands .boxes .box {
+  padding: 30px 0;
+  position: relative;
+  transform: scale(1);
+  transition: 0.3s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+#brands .boxes .box img {
+  transition: 0.3s;
+  width: 50%;
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+}
+#brands .boxes .box:hover img {
+  width: 60%;
+  -webkit-filter: grayscale(0%);
+}
+
+#footer {
+  background-color: black;
+  width: 100%;
+  height: 70vh;
+}
+#footer .txtbox {
+  padding-top: 3rem;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#footer .txtbox h1 {
+  width: 30%;
+}
+#footer .txtbox a {
+  border: 1px solid grey;
+  border-radius: 3rem;
+  padding: 20px 50px;
+  color: white;
+  transition: 0.3s;
+  margin-bottom: 50px;
+}
+#footer .txtbox a:hover {
+  border: 1px solid crimson;
+  background-color: crimson;
+}
+#footer .boxes {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 3rem 0;
+  font-size: 20px;
+  color: gray;
+}
+#footer .boxes .box1 {
+  width: 50%;
+}
+#footer .boxes .box1 img {
+  padding: 2rem 0;
+}
+#footer .boxes .box1 p {
+  width: 60%;
+}
+#footer .boxes .box2 p {
+  color: white;
+  margin: 0 30px;
+}
+#footer .boxes .box2 ul {
+  padding: 30px 30px;
+  list-style: none;
+}
+#footer .boxes .box2 ul li a {
+  line-height: 30px;
+  color: gray;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+#footer .boxes .box2 ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: crimson;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+#footer .boxes .box2 ul li a:hover {
+  color: crimson;
+}
+#footer .boxes .box2 ul li a:hover::before {
+  width: 100%;
+}
+#footer .boxes .box3 p {
+  color: white;
+  margin: 0 30px;
+}
+#footer .boxes .box3 ul {
+  padding: 30px 30px;
+  list-style: none;
+}
+#footer .boxes .box3 ul li a {
+  line-height: 30px;
+  color: gray;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+#footer .boxes .box3 ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: crimson;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+#footer .boxes .box3 ul li a:hover {
+  color: crimson;
+}
+#footer .boxes .box3 ul li a:hover::before {
+  width: 100%;
+}
+#footer .boxes .box4 p {
+  color: white;
+  margin: 0 30px;
+}
+#footer .boxes .box4 ul {
+  padding: 30px 30px;
+  list-style: none;
+}
+#footer .boxes .box4 ul li a {
+  line-height: 30px;
+  color: gray;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+#footer .boxes .box4 ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: crimson;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+#footer .boxes .box4 ul li a:hover {
+  color: crimson;
+}
+#footer .boxes .box4 ul li a:hover::before {
+  width: 100%;
+}
+#footer .boxes .box4 .icon {
+  padding: 0px 30px;
+  font-size: 15px;
+}
+#footer .boxes .box4 .icon i {
+  padding-right: 20px;
+}
+#footer .boxes .box4 .icon i:hover {
+  color: crimson;
+}/*# sourceMappingURL=style.css.map */
